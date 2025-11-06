@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Iframe Session Example</title>
+		<style>
+			iframe {
+				width: 100%;
+				height: 800px;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe
+            id = "appFrame"
+			src="http://localhost:5173"
+			style="width: 100%; height: 90vh"
+		></iframe>
+
+		<script>
+			console.log('example to connect with iframe');
+			const exampleSession = {
+				"id": "64062297-d9ec-4b09-aaaf-3fdeb3e93504",
+				"email": "romtham.thang@gmail.com",
+				"name": "Romtham",
+				"role": "admin",
+				"profile_image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAABGZJREFUeF7tmm+IFHUcxp+Z2dtb70Ll4iSuo+CKUswiPUHBI5UCe1ckvZIgDV/4IuyFB72wF/Ui9Y2eL0RQxBcKCVIUhEWhh1lRHMr1h04Pzw7povLvnXEzszM7MXOy6x/y3L2Z8dnZZ1/PfOfZz2ee3/zZNSb2twXQh4aAISE0LqIgEsLlQ0LIfEiIhLARIMuja4iEkBEgi6OGSAgZAbI4aoiEkBEgi6OGSAgZAbI4aoiEkBEgi6OGSAgZAbI4aoiEkBEgi6OGSAgZAbI4aoiEkBEgi6OGSAgZAbI4aoiEkBEgi6OGSAgZAbI4aoiEkBEgi0PbkOaePjQ9ta42XIGPwLMR2P+gdOVXeMNH4I1+XtuslPfKppA7IZY8+GP9sE+9g+DfsZQRV3e4xhASMQngj52E/fUbCIo3qqOU4tZ1I8T/6wcUhw5Oi8bItcKctwRW+2KYc54EDKuyT+CjOPwRnG/ennbOg9qgfoSMncTksVer4hReg/JL3oXR8kh5v+DGRdgn3oL/90BVs9LaONNCQohNCzci370VRq5limnJhTu4G+7pD9NiXNVxMi8kpNHyygmYDz9bBuONfBK1hPHTEEIKq/Yj11VZ7sKLe7XLX1ryJCQt0vd5nIYQoiXrPs+Ge21255N6rcvMXRd134F7ZgfcwV0xpIx/RKYbknv8ZTQv3wGjtaNMrjQ+AvurdShdOxs/zRgmZk6I1dEDs+0Z5B5bA2veUsBqrmAK2/FTH9zT22NAl8yIuhEy469fclEcPgLn1OYZj0pyQAMICVAa/x3FwV0onjuUJMtYZmdTiO8gsC/Dv3QG3oXP4J0/GgusNIbUjZD/e7lotnbA6lwNq727cr0IfJQu/wznx/fg//ltGhxjO0b9CJnm6Tq6o1q2DcZDnWU4weQluAPvo3jucGzAkh6UGSEhKKvzRRRW7LztNjf8Qcr5vhfe6LGkWcYyP1NCQiJNC9ZPvd3Nz648e1wdgn18Pe2zx60mMyck/HKFF/Yg98TaW36cCuD/0Y/JL9bGchYnOSSTQsy5T6Owah/MtoV19VAYhs2kkGjpmv8m8kvDpWtOZemaGIXTv5H218JMC4mWrpV7ket6DTDMm1ICeBc+hX18Q5KrzoxmZ7YhIZVo6XrpEMzZXZVbYXcc7sAHKP52YEbgkto500JCaPnnNiP//BbAKlSWriu/TN11XT+fFNea52ZeSEhm1pqjsB5dGV4yp0AR/x2oIYRED4w9fbf/Hci5Cue7XngjH9d8NiexY0MIiZau7q3IL9oEmPkyx/D9mP3l61T/ZKQVksTZVw8zJYTMkoRICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4ZICBkBsjhqiISQESCLo4aQCfkPPyCSA0dFltYAAAAASUVORK5CYII=",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDYyMjk3LWQ5ZWMtNGIwOS1hYWFmLTNmZGViM2U5MzUwNCJ9.UJ630FXen-hC94jrKgIBUdCkERPrxstbE_v3I2reFTA",
+				"token_type": "Bearer",
+				"expires_at": null,
+				"permissions": {
+					"workspace": {
+						"models": false,
+						"knowledge": false,
+						"prompts": false,
+						"tools": false
+					},
+					"sharing": {
+						"public_models": false,
+						"public_knowledge": false,
+						"public_prompts": false,
+						"public_tools": false
+					},
+					"chat": {
+						"controls": true,
+						"file_upload": true,
+						"delete": true,
+						"edit": true,
+						"stt": true,
+						"tts": true,
+						"call": true,
+						"multiple_models": true,
+						"temporary": true,
+						"temporary_enforced": false
+					},
+					"features": {
+						"direct_tool_servers": false,
+						"web_search": true,
+						"image_generation": true,
+						"code_interpreter": true
+					}
+				}
+			}
+
+			const encodedSession = encodeURIComponent(JSON.stringify(exampleSession));
+			const iframeUrl = `http://localhost:3000/?session=${encodedSession}`;
+
+			const iframe = document.getElementById('appFrame');
+            const currentUrl = new URL(iframe.src);
+
+            if (!currentUrl.search && currentUrl.pathname === '/') {
+                iframe.src = iframeUrl;
+            }
+
+		</script>
+	</body>
+</html>
