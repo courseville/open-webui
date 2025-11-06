@@ -398,6 +398,7 @@
 
 	onMount(async () => {
 		console.log('mounted');
+		console.log("Welcome to mcv version 0.0.1")
 		window.addEventListener('message', onMessageHandler);
 		$socket?.on('chat-events', chatEventHandler);
 

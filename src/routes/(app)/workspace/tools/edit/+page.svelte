@@ -52,7 +52,7 @@
 	};
 
 	onMount(async () => {
-		console.log("Welcome to mcv version 0.0.1")
+		console.log('mounted');
 		const id = $page.url.searchParams.get('id');
 
 		if (id) {
@@ -61,6 +61,7 @@
 				goto('/workspace/tools');
 				return null;
 			});
+
 			console.log(tool);
 		}
 	});
