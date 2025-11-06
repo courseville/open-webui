@@ -70,6 +70,8 @@ def set_hsts(value: str):
 
 # Set X-Frame-Options response header
 def set_xframe(value: str):
+    if value.strip().upper() == "ALLOWALL":
+        return {}
     pattern = r"^(DENY|SAMEORIGIN)$"
     match = re.match(pattern, value, re.IGNORECASE)
     if not match:
